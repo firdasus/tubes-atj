@@ -231,21 +231,38 @@ return [
         [
             'text'       => 'User Management',
             'route'      => 'arsys.admin.user',
-            'icon'      => 'far fa-fw fa-file',
+            'icon'      => 'far fa-light fa-user',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
-
+        [
+            'text'       => 'Upcoming Event',
+            'route'      => 'pd.index',
+            'icon'      => 'far fa-light fa-envelope',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
+        [
+            'text'       => 'Aplikasi Teknologi Jaringan',
+            'route'      => 'atj.home',
+            'icon'      => 'far fa-light fa-user',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
+        [
+            'text'       => 'Profile',
+            'route'      => 'wardana.index',
+            'icon'      => 'far fa-light fa-user',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
         [
             'text'       => 'Institution',
             'route'      => 'arsys.admin.config.institution',
-            'icon'      => 'far fa-fw fa-file',
+            'icon'      => 'far fa-light fa-building',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
 
         [
             'text'       => 'Log out',
             'route'        => 'user.refresh',
-            'icon'      => 'far fa-fw fa-file',
+            'icon'      => 'far fa-light fa-square',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
     ],
