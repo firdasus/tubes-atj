@@ -1,12 +1,19 @@
-<div class="row">
-    <div class="col-md-5">
-        <x-adminlte-select2 label="Event Type" style="width: 100%" wire:model="type" id="type" name="type">
+<div>
+    <div class="col-md-5" style="background-color: aquamarine; border-type:solid;border-color:azure;border-width:2px;width:100%;margin-bottom:10px;height:100px">
+        <x-adminlte-select label="Event Type" style="width: 100%" wire:click="type" id="type" name="type">
             <option default>Please select your Event Type</option>
             @foreach ($tipe as $index => $type)
                 <option value="{{$type->id}}"><b>{{$type->id}}</b>-{{$type->event_type}}</option>
             @endforeach
-            @error('type') <span class="text-danger">{{ $message }}</span><br> @enderror
-        </x-adminlte-select2>
+       
+        </x-adminlte-select>
+      
 
-    </div>  
+    </div> 
+    @if ($cari=='Predefense')
+    @livewire('predefense.data')
+    @else
+    <a style = " font-style: italic;color: red;">Please select event type to show the event schedule</a>
+    @endif 
 </div>
+

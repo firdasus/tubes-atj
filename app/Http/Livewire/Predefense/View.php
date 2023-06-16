@@ -7,7 +7,8 @@ use App\Models\Predefense\Event_Type;
 
 class View extends Component
 {
-    public $tipe;
+    public $tipe,$type;  
+    public $cari;
     public function mount()
     {
         $this->tipe=Event_Type::all();
@@ -16,5 +17,9 @@ class View extends Component
     {
       
         return view('livewire.predefense.view');
+    }
+    public function type()
+    {
+        $this->cari='Predefense';
     }
 }
