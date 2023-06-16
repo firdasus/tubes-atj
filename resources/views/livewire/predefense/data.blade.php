@@ -12,8 +12,28 @@
                             <th width="10%">Seats left</th>
                         </tr>
                      </thead>
+                     <tbody>
+                        @foreach ($events as $event)
+                        <tr>
+                            <td>{{ $event->event_id }}</td>
+                            <td>{{ $event->event_date }}</td>
+                            <td>{{ $event->application_deadline }}</td>
+                            <td>{{ $event->draft_deadline }}</td>
+                            <td>{{ $event->quota }}</td>
+                        </tr>
+                        @endforeach
+                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #f2f2f2;
+}
+</style>
