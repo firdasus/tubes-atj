@@ -10,7 +10,7 @@
                 <div class="card-body">
                 <div class="col-lg-12">
                     @livewire('predefense.view')
-                    @livewire('predefense.data')
+                    
                 </div>
                 </div>
             </div>
