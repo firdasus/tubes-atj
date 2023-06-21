@@ -17,7 +17,7 @@ class View extends Component
 
     public function render()
     {
-        return view('livewire.seminar.view');
+        return view('livewire.seminar.view'); // menampilkan seminar view
     }
 
     public function type()
