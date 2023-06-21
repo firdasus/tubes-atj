@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Predefense;
+namespace App\Http\Livewire\Seminar;
 
 use Livewire\Component;
 use App\Models\Upcoming\Event;
@@ -17,36 +17,36 @@ class Data extends Component
 
     public function mount()
     {
-        
+
     }
 
     public function render()
     {
         $this->filterData();
 
-        return view('livewire.predefense.data', [
+        return view('livewire.seminar.data', [
             'events' => $this->events
         ]);
     }
 
     private function filterData()
     {
-        $this->events = Event::where('event_type', 1)
+        $this->events = Event::where('event_type', 3)
             ->orderBy('event_date', 'desc')
             ->skip(($this->page - 1) * $this->perPage)
             ->take($this->perPage)
             ->get();
-        
-            $this->numbering = ($this->page - 1) * $this->perPage + 1;    
+
+            $this->numbering = ($this->page - 1) * $this->perPage + 1;
                 }
-                public function nextPage()
+                public function Selanjutnya()
             {
                 if ($this->events->count() == $this->perPage) {
                     $this->page++;
                 }
             }
 
-            public function previousPage()
+            public function Sebelumnya()
             {
                 if ($this->page > 1) {
                     $this->page--;

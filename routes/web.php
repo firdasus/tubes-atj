@@ -30,9 +30,9 @@ Route::get('/user/profile/view', \App\Http\Livewire\Arsys\User\Profile\View\Idx:
 Route::get('/user/profile/edit', \App\Http\Livewire\Arsys\User\Profile\Edit\Idx::class)->name('arsys.user.profile.edit');
 Route::get('/admin/user', \App\Http\Livewire\Arsys\Admin\User\Idx::class)->name('arsys.admin.user');
 Route::get('/admin/config/institution', \App\Http\Livewire\Arsys\Admin\Config\Institution\Idx::class)->name('arsys.admin.config.institution');
-Route::get('/wardana/index',\App\Http\Livewire\wardana\index::class)->name('wardana.index');
-//predefense
-Route::get('/landingpage/predefense',\App\Http\Livewire\Predefense\Idx::class)->name('pd.index');
+
+//seminar
+Route::get('/landingpage/seminar',\App\Http\Livewire\Seminar\Idx::class)->name('seminar.index');
 
 
 //ATJ

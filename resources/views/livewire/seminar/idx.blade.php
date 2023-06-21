@@ -5,12 +5,11 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <b>Event</b> | Schedule of research defense and seminar
+                    <b>Event</b> | Schedule of Research Defense and Seminar
                 </div>
                 <div class="card-body">
                 <div class="col-lg-12">
-                    @livewire('predefense.view')
-                    
+                    @livewire('seminar.view')
                 </div>
                 </div>
             </div>

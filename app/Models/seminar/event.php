@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\predefense;
+namespace App\Models\seminar;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

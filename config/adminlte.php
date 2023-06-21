@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'ArSys 2023',
+    'title' => 'KELOMPOK 2',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>ArSys</b>2023',
+    'logo' => '<b>ATJ - </b>2023',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -63,7 +63,6 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
     */
-
     'usermenu_enabled' => true,
     'usermenu_header' => false,
     'usermenu_header_class' => 'bg-primary',
@@ -127,9 +126,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-light-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-info navbar-dark',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -225,44 +224,30 @@ return [
     */
 
     'menu' => [
-       
 
-  
+
+
         [
-            'text'       => 'User Management',
-            'route'      => 'arsys.admin.user',
-            'icon'      => 'far fa-light fa-user',
-            //'roles'     => ['reviewer', 'committee','author'],
+
         ],
         [
             'text'       => 'Upcoming Event',
-            'route'      => 'pd.index',
-            'icon'      => 'far fa-light fa-envelope',
+            'route'      => 'seminar.index',
+            'icon'      => 'far fa-light fa-circle',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
         [
-            'text'       => 'Aplikasi Teknologi Jaringan',
-            'route'      => 'atj.home',
-            'icon'      => 'far fa-light fa-user',
-            //'roles'     => ['reviewer', 'committee','author'],
+
         ],
+
         [
-            'text'       => 'Profile',
-            'route'      => 'wardana.index',
-            'icon'      => 'far fa-light fa-user',
-            //'roles'     => ['reviewer', 'committee','author'],
-        ],
-        [
-            'text'       => 'Institution',
-            'route'      => 'arsys.admin.config.institution',
-            'icon'      => 'far fa-light fa-building',
-            //'roles'     => ['reviewer', 'committee','author'],
+
         ],
 
         [
             'text'       => 'Log out',
             'route'        => 'user.refresh',
-            'icon'      => 'far fa-light fa-square',
+            'icon'      => 'far fa-light fa-circle',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
     ],
