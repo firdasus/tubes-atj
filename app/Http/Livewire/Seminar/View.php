@@ -12,7 +12,7 @@ class View extends Component
 
     public function mount()
     {
-        $this->tipe = Event_Type::all();
+        $this->tipe = Event_Type::all(); //memasukan event type
     }
 
     public function render()
